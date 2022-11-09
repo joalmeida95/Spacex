@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.historia, .historia2, .cuerpo{
+   align-items: center;
+   max-width: 1500px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center; 
+   margin-bottom: 50px;
+}
+.copyright{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+}
+
+@media(max-width:768px){
+    .historia, .historia2, .cuerpo{
+        max-width: 1000;
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+    }
+}

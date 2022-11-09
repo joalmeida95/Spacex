@@ -1,0 +1,29 @@
+body{
+    background-image:url(./images/universo.jpg);
+    
+    color: white;
+}
+
+.contenedor{
+   display: flex;
+   gap: 200px;
+   flex-wrap:wrap;
+   justify-content: center;
+   max-width: 2000px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 100px;
+   margin-top: 50px;
+}
+
+
+.instalaciones{
+    align-items: center;
+    text-align: center;
+    max-inline-size: 30%;
+}
+.copyright{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+}

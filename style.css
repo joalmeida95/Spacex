@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+   padding: 0;
+}
+:root{
+    --negro: #000;
+    --grisClaro: #BBB;
+    --blanco: #FFF;
+    --grisOscuro: #464444;
+}
+
+body{
+    background-color: var(--negro);
+    background-image: url(./images/universo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    
+
+}
+
+.cabecera,
+.contenido{
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.cabecera h1 {
+    font-size: 30px;
+    color:var(--grisClaro);
+}
+.cabecera h1:hover{
+    color: var(--negro);
+}
+
+
+
+.contenido {
+    color: var(--blanco);
+
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista {
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    margin-left: 0px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.lista a{
+    color: var(--blanco);
+    text-decoration: none;
+    border-left: 3px solid var(--grisOscuro);
+    padding: 10px;
+}
+
+.lista a:hover{
+    background-color: var(--grisOscuro);
+}
+
+.navegacion form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+
+
+.imgcenter{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.seccion-info{
+    margin: 50px;
+    display: flex;
+    justify-content:center;   
+}
+
+.seccion-info h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.seccion-center{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 120px;
+    justify-content: center;
+}
+ 
+.seccion-center h3{
+    display: flex;
+    justify-content:flex-start ;
+}
+.seccion-center h3:hover{
+    border-bottom: 2px solid var(--grisOscuro);
+}
+
+.news{
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--grisOscuro);
+    width:1000px;
+    margin-left: 325px;
+    
+}
+.suscripcion{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.copyright{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+    gap: 60px;
+}
+
+/* -----Sector media queries----- */
+
+@media(max-width:768px ){
+    .seccion-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:110%;
+             
+        text-align: center;
+            
+    }
+    .seccion-center{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }  
+    .misiones{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left:120%;
+    } 
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+    }
+    .cabecera h1{
+        display: none;
+    }
+    .navegacion form{
+        display: none;
+    }
+}
+    
+    @media(max-width:400px){
+        .seccion-info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .seccion-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .news{
+            display: none;
+        }
+
+    }
+
